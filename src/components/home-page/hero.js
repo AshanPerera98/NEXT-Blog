@@ -10,8 +10,8 @@ function Hero() {
         <Image
           src={"/site/52708527.jpg"}
           alt="image"
-          width={"460"}
-          height={"460"}
+          width={460}
+          height={460}
         />
       </div>
       <h1>ashan</h1>
