@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { Fragment } from "react";
+
+import Hero from "@/components/home-page/hero";
 
 function HomePage() {
   return (
-    <div>HomePage</div>
-  )
+    <Fragment>
+      <Hero />
+      {/* <FeaturedPosts /> */}
+    </Fragment>
+  );
 }
 
-export default HomePage
+export default HomePage;
