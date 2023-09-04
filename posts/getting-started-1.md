@@ -1,5 +1,5 @@
 ---
-title: "This is the post title"
+title: "getting started nextjs"
 date: "2023-10-26"
 author: "ashan"
 image: "getting-started-nextjs.png"

@@ -4,20 +4,23 @@ import PostHeader from "./post-header";
 
 import classes from "./post-content.module.css";
 
-const DUMMY_DATA = {
-  title: "getting-started",
-  slug: "getting-started-1",
-  image: "getting-started-nextjs.png",
-  content: " # getting started",
-  date: "2023-08-23",
-};
+// const DUMMY_DATA = {
+//   title: "getting-started",
+//   slug: "getting-started-1",
+//   image: "getting-started-nextjs.png",
+//   content: " # getting started",
+//   date: "2023-08-23",
+// };
 
-function PostContent() {
-  const image = `/posts/${DUMMY_DATA.slug}/${DUMMY_DATA.image}`;
+function PostContent(props) {
+  const { post } = props;
+
+  const image = `/posts/${post.slug}/${post.image}`;
+
   return (
     <article className={classes.content}>
-      <PostHeader title={DUMMY_DATA.title} image={image} />
-      <ReactMarkdown>{DUMMY_DATA.content}</ReactMarkdown>
+      <PostHeader title={post.title} image={image} />
+      <ReactMarkdown>{post.content}</ReactMarkdown>
     </article>
   );
 }
