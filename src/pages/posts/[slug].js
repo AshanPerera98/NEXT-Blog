@@ -1,9 +1,8 @@
-import React from 'react'
+import PostContent from "@/components/posts/post-detail/post-content";
+import React from "react";
 
-function SiglePostPage() {
-  return (
-    <div>SiglePostPage</div>
-  )
+function PostDetailPage() {
+  return <PostContent />;
 }
 
-export default SiglePostPage
+export default PostDetailPage;
